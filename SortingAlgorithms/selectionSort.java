@@ -2,7 +2,7 @@ package SortingAlgorithms;
 public class selectionSort {
     public static void main(String[] args) {
 
-        int[] myNumbers = {7, 9, 11, 12, 3};
+        int[] myNumbers = {6, 2, 1, 25, 3, 4, 2};
 
         for (int i=0; i<myNumbers.length; i++) {
             int minIndex = i;
@@ -10,11 +10,10 @@ public class selectionSort {
                 if (myNumbers[j] < myNumbers[minIndex]) {
                     minIndex = j;
                 }
-
-                int temp = myNumbers[i];
-                myNumbers[i] = myNumbers[minIndex];
-                myNumbers[minIndex] = temp;
             }
+            int temp = myNumbers[i];
+            myNumbers[i] = myNumbers[minIndex];
+            myNumbers[minIndex] = temp;
         }
 
         System.out.print("Sorted list" + " ");
@@ -23,3 +22,5 @@ public class selectionSort {
         }
     }
 }
+
+// Improvement needed this algorithem is buggy
