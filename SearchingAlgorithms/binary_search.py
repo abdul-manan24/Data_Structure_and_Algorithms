@@ -5,7 +5,7 @@ def binary_search(array:list, value_to_search):
     right = len(array) - 1
 
     while left <= right:
-        mid = (left + right) // 2
+        mid = left + (right - left) // 2
         if array[mid] == value_to_search:
             print(f"Value {value_to_search}, found at {mid}")
             return
