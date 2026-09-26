@@ -25,8 +25,6 @@ node4.prev = node3
 node4.next = node1
 
 
-
-
 print("Traversing forward")
 
 currentNode = node1
